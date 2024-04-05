@@ -1,0 +1,94 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.grid-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px; /* Padding for the entire grid */
+}
+
+.grid-item {
+  text-align: center;
+  border-radius: 10px; /* Rounded corners for grid items */
+  padding: 20px; /* Padding for content within grid items */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for grid items */
+  animation: glow 2s infinite alternate; /* Apply glow animation */
+}
+
+.grid-item img {
+  display: block; /* Ensures image fills the grid item width */
+  max-width: 100%; /* Restricts image size to fit within the grid item */
+  margin-bottom: 10px; /* Spacing between image and text */
+}
+
+.grid-item p {
+  font-size: 1em; /* Slightly smaller text for framework names */
+  margin: 0; /* Remove default margin for better spacing */
+}
+
+/* Animation styles for the glow effect (optional) */
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); }
+  to { box-shadow: 0 0 20px rgba(255, 0, 255, 0.5); }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Black background */
+}
+
+.modal-content {
+  background-color:#020510; /* Dark background */
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); /* Purple glow effect */
+  color: #fff; /* White text color */
+  max-width: 600px; /* Set maximum width */
+  font-size: 16px; /* Increase font size */
+  line-height: 1.5; /* Increase line height for better readability */
+  font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+.modal-content p {
+  margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.modal-content code {
+  display: block;
+  background-color: #37383a; /* Dark background for code */
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+}

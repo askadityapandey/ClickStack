@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickStack</title>
+  <link href="prism.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .grid-item img {
+      width: 100px; /* Adjust the width to your preference */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ClickStack</h1>
+    <p>Install everything from one place</p>
+    <div class="grid-container">
+      <a href="#" class="grid-item">
+        <img src="Assets/icons8-node-js.svg" alt="Node.js Logo" onclick="openModal('Node.js')"> <p>Node.js</p>
+      </a>
+      <a href="#" class="grid-item">
+        <img src="Assets/icons8-express-js.svg" alt="Express.js Logo" onclick="openModal('Express.js')"> <p>Express.js</p>
+      </a>
+      <a href="#" class="grid-item" onclick="openModal('GraphQL')">
+        <img src="Assets/icons8-graphql.svg" alt="GraphQL Logo"> <p>GraphQL</p>
+      </a>
+       <a href="#" class="grid-item" onclick="openModal('GitHub')">
+        <img src="Assets/icons8-github.svg" alt="GitHub Logo"> <p>GitHub</p>
+      </a>
+      <a href="#" class="grid-item" onclick="openModal('Flask')">
+        <img src="Assets/icons8-flask.svg" alt="Flask Logo"> <p>Flask</p>
+      </a>
+      <a href="#" class="grid-item" onclick="openModal('Django')">
+        <img src="Assets/icons8-django.svg" alt="Django Logo"> <p>Django</p>
+      </a>
+      </div>
+      <div class="grid-container">
+        <a href="#" class="grid-item">
+          <img src="Assets/icons8-bootstrap.svg" alt="Bootstrap Logo" onclick="openModal('Bootstrap')"> <p>Bootstrap</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="Assets/vue-svgrepo-com.svg" alt="Vue.js Logo"> <p>Vue.js</p>
+        </a>
+        <a href="#" class="grid-item"  onclick="openModal('TypeScript')">
+          <img src="Assets/typescript-16-svgrepo-com.svg" alt="TypeScript Logo"> <p>TypeScript</p>
+        </a>
+         <a href="#" class="grid-item">
+          <img src="Assets/tensorflow-svgrepo-com.svg" alt="Tensorflow Logo"> <p>Tensorflow</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="Assets/svelte-16-svgrepo-com.svg" alt="Svelte.js Logo"> <p>Svelte.js</p>
+        </a>
+        <a href="#" class="grid-item">
+          <img src="Assets/redux-svgrepo-com.svg" alt="Redux Logo"> <p>Redux</p>
+        </a>
+        </div>
+        <div class="grid-container">
+          <a href="#" class="grid-item">
+            <img src="Assets/redis-svgrepo-com.svg" alt="Redis Logo"> <p>Redis</p>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Assets/next-dot-js-svgrepo-com.svg" alt="Next.js Logo"> <p>Next.js</p>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Assets/logo-dark (1).svg" alt="Socket.IO Logo"> <p>Socket.IO</p>
+          </a>
+           <a href="#" class="grid-item">
+            <img src="Assets/kafka-icon-svgrepo-com.svg" alt="Kafka Logo"> <p>Kafka</p>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Assets/svelte-16-svgrepo-com.svg" alt="Svelte.js Logo"> <p>Svelte.js</p>
+          </a>
+          <a href="#" class="grid-item">
+            <img src="Assets/firebase-svgrepo-com.svg" alt="Firebase Logo"> <p>FireBase</p>
+          </a>
+          </div>
+          <div class="grid-container">
+            <a href="#" class="grid-item">
+              <img src="Assets/docker-svgrepo-com.svg" alt="Docker Logo"> <p>Docker</p>
+            </a>
+            <a href="#" class="grid-item">
+              <img src="Assets/axios-ar21.svg" alt="AXIOS Logo"> <p>AXIOS</p>
+            </a>
+            <a href="#" class="grid-item">
+              <img src="Assets/angular-icon-svgrepo-com.svg" alt="Angular Logo"> <p>Angular</p>
+            </a>
+            <a href="#" class="grid-item"  onclick="openModal('ffmpeg')">
+              <img src="Assets/ffmpeg-svgrepo-com.svg" alt="Angular Logo"> <p>ffmpeg</p>
+            </a>
+            </div>
+  </div>
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Install Technology</h2>
+      <p id="installation-steps"></p>
+      <a id="documentation-link" href="#" target="_blank">Official Documentation</a>
+    </div>
+  </div>
+    <script src="prism.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
