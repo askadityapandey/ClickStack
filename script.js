@@ -273,12 +273,17 @@ function openModal(technology) {
                           <p>5. Start Kafka Server: Open a new terminal and start the Kafka server:</p>
                           <pre><code class="language-bash">bin/kafka-server-start.sh config/server.properties</code></pre>
                           <p>6. Create a Topic: You can create a Kafka topic using the following command:</p>
-                          <pre><code class="language-bash">bin/kafka-topics.sh --create --topic my-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1</code></pre>
+                          <pre><code class="language-bash">
+        bin/kafka-topics.sh --create --topic my-topic --
+        bootstrap-server localhost:9092 --replication-factor 1 
+        --partitions 1</code></pre>
                           <p>Replace 'my-topic' with your desired topic name.</p>
                           <p>7. Produce and Consume Messages: You can now produce and consume messages from your Kafka topic. Use the following commands:</p>
-                          <pre><code class="language-bash">bin/kafka-console-producer.sh --topic my-topic --bootstrap-server localhost:9092</code></pre>
+                          <pre><code class="language-bash">bin/kafka-console-producer.sh --topic my-topic
+                           --bootstrap-server localhost:9092</code></pre>
                           <p>and</p>
-                          <pre><code class="language-bash">bin/kafka-console-consumer.sh --topic my-topic --from-beginning --bootstrap-server localhost:9092</code></pre>
+                          <pre><code class="language-bash">bin/kafka-console-consumer.sh --topic my-topic --from-beginning 
+                          --bootstrap-server localhost:9092</code></pre>
                           <p>Replace 'my-topic' with your actual topic name.</p>
                           <p>8. Explore Kafka Documentation: Refer to the official Kafka documentation for advanced configurations and usage.</p>
                         `;
@@ -294,22 +299,22 @@ function openModal(technology) {
                             <pre><code class="language-bash">yarn add firebase</code></pre>
                             <p>4. Initialize Firebase in your App: In your JavaScript code, initialize Firebase with your Firebase configuration:</p>
                             <pre><code class="language-javascript">
-                            // Import Firebase SDK
-                            import firebase from 'firebase/app';
-                            import 'firebase/auth'; // (Optional) If you're using Firebase Authentication
-                            import 'firebase/firestore'; // (Optional) If you're using Firestore
+                 // Import Firebase SDK
+                import firebase from 'firebase/app';
+               import 'firebase/auth'; 
+              import 'firebase/firestore';
                         
-                            // Initialize Firebase
-                            const firebaseConfig = {
-                              apiKey: "YOUR_API_KEY",
-                              authDomain: "YOUR_AUTH_DOMAIN",
-                              projectId: "YOUR_PROJECT_ID",
-                              storageBucket: "YOUR_STORAGE_BUCKET",
-                              messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-                              appId: "YOUR_APP_ID"
+                // Initialize Firebase
+             const firebaseConfig = {
+             apiKey: "YOUR_API_KEY",
+             authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+             messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+             appId: "YOUR_APP_ID"
                             };
                         
-                            firebase.initializeApp(firebaseConfig);
+              firebase.initializeApp(firebaseConfig);
                             </code></pre>
                             <p>5. Start using Firebase: Now you can start using Firebase services like Authentication, Firestore, Realtime Database, Cloud Storage, etc. Refer to the Firebase documentation for more information on integrating and using Firebase services in your app.</p>
                           `;
@@ -337,16 +342,16 @@ function openModal(technology) {
                                 <pre><code class="language-javascript">import axios from 'axios';</code></pre>
                                 <p>3. Use Axios: You can now use Axios to make HTTP requests. Here's an example of making a GET request:</p>
                                 <pre><code class="language-javascript">// Make a GET request
-                            axios.get('https://api.example.com/data')
-                              .then(response => {
-                                // Handle success
-                                console.log(response.data);
-                              })
-                              .catch(error => {
-                                // Handle error
-                                console.error('There was an error!', error);
-                              });</code></pre>
-                                <p>4. Refer to the Axios documentation for more advanced usage and configuration options.</p>
+            axios.get('https://api.example.com/data')
+              then(response => {
+              // Handle success
+               console.log(response.data);
+                })
+              .catch(error => {
+            // Handle error
+            console.error('There was an error!', error);
+             });</code></pre>
+                                  <p>4. Refer to the Axios documentation for more advanced usage and configuration options.</p>                       
                               `;
                               documentationLink.href = "https://axios-http.com/docs/intro";
                               break;
