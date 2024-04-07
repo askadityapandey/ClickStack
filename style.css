@@ -12,16 +12,20 @@ body {
 
 .container {
   text-align: center;
+
   padding: 50px;
   border-radius: 10px;
  
 }
 a{
+  font-family: 'Roboto';
+  color: white;
   text-decoration: none;
-  
+
 }
 h1 {
   font-size: 3em;
+  font-family: 'Pacifico';
   margin-bottom: 10px;
 }
 
