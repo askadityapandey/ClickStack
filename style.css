@@ -74,7 +74,7 @@ p {
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(255, 0, 255, 0.2); /* Purple glow effect */
   color: #fff; /* White text color */
-  max-width: 600px; /* Set maximum width */
+  max-width: 750px; /* Set maximum width */
   font-size: 16px; /* Increase font size */
   line-height: 1.5; /* Increase line height for better readability */
   font-family: 'Arial', sans-serif; /* Change font family */
