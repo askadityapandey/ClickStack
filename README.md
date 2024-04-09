@@ -8,6 +8,11 @@ ClickStack is an open source web application project that allows users to easily
 - Access installation instructions within the application.
 - Find links to official documentation for further reference.
 
+## Screenshots
+![image](https://github.com/askadityapandey/ClickStack/assets/144938685/07d216ae-ab6a-4a61-87bc-79a888b7e468)
+![image](https://github.com/askadityapandey/ClickStack/assets/144938685/c81660b7-d977-471c-821a-139a3b99b63f)
+
+
 ## Technologies Supported (This is not an exhaustive list)
 ### Backend
 - Node.js
